@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////////////
+// File: Path
+/////////////////////////////////////////////////////////////////////
+//
+
+  @font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: $iconic-name;
+    src:url('#{$iconic-path}/#{$iconic-name}-webfont.eot?v=#{$iconic-version}');
+    src:url('#{$iconic-path}/#{$iconic-name}-webfont.eot?#iefix&v=#{$iconic-version}') format('embedded-opentype'),
+        url('#{$iconic-path}/#{$iconic-name}-webfont.woff2?v=#{$iconic-version}') format('woff2'),
+        url('#{$iconic-path}/#{$iconic-name}-webfont.woff?v=#{$iconic-version}') format('woff'),
+        url('#{$iconic-path}/#{$iconic-name}-webfont.ttf?v=#{$iconic-version}') format('truetype'),
+        url('#{$iconic-path}/#{$iconic-name}-webfont.svg?v=#{$iconic-version}#unquote($iconic-font-name-base)') format('svg');
+  }

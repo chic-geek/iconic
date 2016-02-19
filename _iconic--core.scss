@@ -1,0 +1,17 @@
+/////////////////////////////////////////////////////////////////////
+// File: Core
+/////////////////////////////////////////////////////////////////////
+//
+
+  .iconic {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: $iconic-size;
+    font-family: $iconic-name;
+    line-height: $iconic-line-height;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

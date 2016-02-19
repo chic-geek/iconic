@@ -1,0 +1,19 @@
+/////////////////////////////////////////////////////////////////////
+// File: Icons
+/////////////////////////////////////////////////////////////////////
+//
+
+  //////////.........................................................
+  // Desc: Simple loop to iterate over all icons in the
+  //       `$iconic-icons` hash.
+  //
+  // Note: There's an issue with sass v3.4.# that messes up the
+  //       character output, leaving only an odd character being
+  //       referenced, solution@:
+  //       https://github.com/sass/sass/issues/1395
+  //
+  @each $iconic-icon-name, $iconic-icon-entity in $iconic-icons {
+    .#{$iconic-css-prefix}-#{$iconic-icon-name}:before {
+      content: unquote("\"")+unquote(str-insert($iconic-icon-entity, "\\", 1))+unquote("\"");
+    }
+  }
